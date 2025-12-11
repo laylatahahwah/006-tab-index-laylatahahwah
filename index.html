@@ -4,9 +4,27 @@
     </head>
     <body>
         <form>
-            <input id="name">
-            <input id="age">
-            <input id="city" >
+            <!-- This input will be tabbed to second -->
+            <label for="name">Name:</label>
+            <input id="name" tabindex="2">
+            <br>
+            
+            <!-- This input will be tabbed to first -->
+            <label for="age">Age:</label>
+            <input id="age" tabindex="1">
+            <br>
+
+            <!-- This input will be tabbed to third -->
+            <label for="city">City:</label>
+            <input id="city" tabindex="3" >
+            <br>
         </form>
     </body>
 </html>
+Use code with caution.
+
+By setting tabindex values explicitly, you override the default sequential tabbing order of the document. You can find more information about this attribute in the W3Schools tabindex guide.
+
+
+
+
